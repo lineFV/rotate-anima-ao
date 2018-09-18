@@ -1,0 +1,53 @@
+body{
+ margin:0;
+ height: 100vh;
+ display: flex;
+ align-content: center;
+ justify-content:center;
+ background-color: black;
+ animation: 2s colorir;
+ animation-duration: 5s;
+ animation-delay: 2s;
+ animation-timing-function: linear infinite alternate;
+ animation-iteration-count: infinite;
+}
+div{
+   background-color:blue;
+   width: 200px;
+   height: 200px;
+   animation-duration: 5s;
+   animation-delay: 2s;
+   animation-timing-function: linear;
+   animation-name: animar;
+   animation-iteration-count: infinite;
+}
+    /* div:hover{
+    transform: rotate(45deg);
+    } */
+
+@keyframes animar{
+0%{
+    transform: rotate(0deg);
+    background-color: blue;
+}
+25%{
+    background-color:rgb(255, 36, 72);
+}
+100%{
+    background-color: blue;
+    transform: rotate(45deg);
+}
+} 
+@keyframes colorir{
+    0%{
+        transform: rotate(0deg);
+        background-color: black;
+    }
+    25%{
+        background-color:white;
+    }
+    100%{
+        background-color: black;
+        transform: rotate(45deg);
+    }
+    }
